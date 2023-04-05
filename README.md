@@ -3,8 +3,6 @@
 
 Among other things sometimes I make mods for CD Project RED games, just for fun :relaxed:
 
-[![Contact](https://img.shields.io/badge/-contact-blue)](mailto:info@sedsoftware.com)
-
 <div class="flex w-full items-center flex-wrap">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=djkovrik&" alt="djkovrik" /><br>
 <img src="https://github-readme-stats.vercel.app/api?username=djkovrik&show_icons=true&theme=vue&count_private=true" alt="djkovrik" /><br>
