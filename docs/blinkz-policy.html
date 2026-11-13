@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Blinkz - Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#fff; --text:#202124; --muted:#5f6368; --link:#1769aa; --border:#dadce0; --panel:#f8f9fa; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121212; --text:#e8eaed; --muted:#bdc1c6; --link:#8ab4f8; --border:#3c4043; --panel:#1f1f1f; } }
+    body { max-width:860px; margin:0 auto; padding:32px 20px 56px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; color:var(--text); background:var(--bg); }
+    h1 { font-size:2rem; line-height:1.25; margin:0 0 8px; }
+    h2 { font-size:1.3rem; margin:32px 0 8px; }
+    p, li { font-size:1rem; }
+    ul { padding-left:1.4rem; }
+    a { color:var(--link); overflow-wrap:anywhere; }
+    .effective-date { color:var(--muted); margin-top:0; }
+    .summary { margin:24px 0; padding:16px 18px; border:1px solid var(--border); border-radius:12px; background:var(--panel); }
+    footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Blinkz Privacy Policy</h1>
+    <p class="effective-date"><strong>Effective date:</strong> November 13, 2026</p>
+
+    <p>
+      This Privacy Policy describes how the Blinkz Android application (the “Application”), operated by
+      Sergey V. (the “Service Provider”), accesses, processes, stores, and shares information. Blinkz uses
+      the front camera to count blinks, display blink-rate statistics, and provide optional sound and
+      vibration alerts when your blink rate falls below your chosen threshold.
+    </p>
+
+    <div class="summary">
+      <strong>Privacy summary:</strong> Camera images and facial analysis are processed on your device.
+      Blinkz does not record photos or videos. Its tracking and telemetry features do not upload camera
+      images, eye-open probabilities, or your blink-history database to the Service Provider or Google.
+      Blink statistics and settings are stored
+      locally, but Android may include them in system backups or device transfers. Google Analytics for
+      Firebase, Firebase Crashlytics, Firebase Performance Monitoring, and ML Kit may send usage and
+      technical data to Google. These services operate automatically; this version has no in-app analytics
+      or diagnostic collection switch. Blinkz has no user accounts and does not display advertisements.
+    </div>
+
+    <h2>1. Camera and Facial Analysis</h2>
+    <p>
+      With your camera permission, Blinkz accesses the front camera to show a live preview and analyze
+      frames using Google's on-device ML Kit Face Detection. Analysis detects a face and estimates whether
+      each eye is open. Blinkz uses these temporary results to count blinks and show whether a face is
+      available. ML Kit may also calculate facial contours during this processing. Blinkz does not use
+      facial recognition to identify you, create an identity profile, or authenticate you.
+    </p>
+    <p>
+      Frames and facial-analysis results are processed in memory rather than saved as photos, videos, or
+      facial templates. They are not attached to analytics events or diagnostic reports. The Application
+      does not access the microphone or record audio.
+    </p>
+    <p>
+      Camera analysis can run while the camera preview is open, including before you press Start or after
+      you press Stop. Start and Stop control blink counting; Stop does not necessarily close the camera.
+      Tracking can continue in Picture in Picture mode while you use another app. To prevent camera
+      access, revoke Blinkz's camera permission in Android settings; you can also close the Application.
+    </p>
+
+    <h2>2. Information Stored on Your Device</h2>
+    <p>Blinkz stores the following in its local application storage:</p>
+    <ul>
+      <li>blink counts for completed tracking minutes, with the local date and time and a local record identifier;</li>
+      <li>your blink-rate threshold and sound and vibration preferences;</li>
+      <li>auto-start, launch-minimized, and minimized-window opacity preferences.</li>
+    </ul>
+    <p>
+      These records support the statistics charts and your settings. Current session totals, elapsed time,
+      face-availability state, and eye-open probabilities are held in memory for operation. Blinkz has no
+      account-based synchronization, application-operated cloud backup, or history export feature. The
+      Service Provider does not receive your local blink-history database through the Application.
+    </p>
+
+    <h2>3. Permissions and Optional Features</h2>
+    <ul>
+      <li><strong>Camera:</strong> required for live preview and blink detection. Denying or revoking access prevents blink tracking.</li>
+      <li><strong>Vibration:</strong> used for local alerts when enabled. Sound alerts play a device notification sound without microphone access.</li>
+      <li><strong>Display over other apps:</strong> requested for optional auto-start, allowing Blinkz to open after a screen unlock or device restart, subject to Android restrictions.</li>
+      <li><strong>Boot and unlock events:</strong> checked locally to open Blinkz when auto-start is enabled. Auto-start is off by default.</li>
+      <li><strong>Network access and network state:</strong> used by the included Google services for their technical, diagnostic, and analytics functions.</li>
+    </ul>
+    <p>
+      Picture in Picture keeps the tracking window visible while you use other apps. Blinkz does not use
+      this feature or the display-over-other-apps permission to capture your screen, read other apps'
+      content, or collect your activity in other apps. You can change optional features in Blinkz settings
+      and manage camera and display-over-other-apps access in Android settings.
+    </p>
+
+    <h2>4. Google Services and Network Data</h2>
+    <p>
+      The Application includes the services below. Their network requests necessarily expose network
+      information, such as a source IP address, to the receiving service. Core camera analysis and local
+      statistics do not require uploading your camera content or blink records.
+    </p>
+
+    <h3>Google Analytics for Firebase</h3>
+    <p>
+      Analytics automatically measures app usage. It may process an app-instance identifier, the Android
+      Advertising ID when available, device and app details, approximate location, installation attribution,
+      and automatically collected events such as first open, sessions, app updates, and screen views.
+      Blinkz does not request precise-location permission. The Application does not add custom analytics
+      events containing blink counts, tracking dates, facial-analysis results, or camera images, and does
+      not set a custom User-ID.
+    </p>
+    <p>
+      Although Blinkz does not show advertisements, its included Analytics SDK can collect an Advertising
+      ID under its default configuration, subject to device settings and availability. This is separate
+      from the camera permission. See Google's
+      <a href="https://support.google.com/firebase/answer/6318039?hl=en" target="_blank" rel="noopener noreferrer">Analytics data collection information</a>.
+    </p>
+
+    <h3>Firebase Crashlytics</h3>
+    <p>
+      Crashlytics automatically reports crashes. Blinkz also reports selected handled errors, including
+      failures in app operations or auto-start. Reports may contain exception messages, stack traces,
+      timestamps, app and device state, and SDK-generated installation and session identifiers. Analytics
+      events may appear as diagnostic breadcrumbs. Blinkz does not attach camera images, blink-history
+      records, a custom user identifier, or custom content keys. Runtime exception messages may contain
+      technical details. Reports may be queued locally and uploaded on a later launch.
+    </p>
+
+    <h3>Firebase Performance Monitoring</h3>
+    <p>
+      Performance Monitoring automatically measures reliability and responsiveness, including startup,
+      screen rendering, and supported network requests. It may process installation and session
+      identifiers, app and device details, network type, carrier, country derived from IP information,
+      timing, and request metadata. Network measurements can include a URL without its query parameters,
+      response code, transfer size, and duration; they do not include request or response body content.
+      Blinkz does not add blink-history records or facial-analysis results to performance traces.
+    </p>
+
+    <h3>ML Kit Technical Metrics</h3>
+    <p>
+      ML Kit performs facial analysis on the device and does not send the input images or resulting facial
+      analysis to Google. Separately, its SDK may contact Google for maintenance and send technical metrics,
+      including app and device information, a per-installation identifier, API configuration, processing
+      latency, and feature or error events. These metrics help Google operate and improve ML Kit. They are
+      distinct from your saved blink statistics. See the
+      <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">ML Kit Terms and Privacy</a> and
+      <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">ML Kit data disclosures</a>.
+    </p>
+
+    <p>Further information about Google's processing is available here:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
+      <li><a href="https://firebase.google.com/docs/android/play-data-disclosure" target="_blank" rel="noopener noreferrer">Firebase Android Data Disclosures</a></li>
+      <li><a href="https://firebase.google.com/docs/perf-mon/network-traces?platform=android" target="_blank" rel="noopener noreferrer">Performance Monitoring Network Data</a></li>
+    </ul>
+
+    <h2>5. Purposes and Sharing</h2>
+    <p>
+      Information is processed to provide camera-based blink counting, local statistics and alerts, retain
+      your preferences, measure app usage, diagnose errors, and improve performance. Google processes the
+      technical and usage information described above through the included SDKs. Android's backup provider
+      may separately process backed-up app data as explained below. Blinkz does not include a separate
+      developer-operated server for uploading your camera content or blink history.
+    </p>
+    <p>
+      The Service Provider does not sell your camera images or blink history. Information the Service
+      Provider holds may be disclosed where legally required or necessary to investigate security incidents
+      or protect legal rights. If you contact the Service Provider, your email address and the information
+      you choose to send will be used to respond and handle your request. Please avoid sending camera
+      images or sensitive health information unless needed for your request.
+    </p>
+
+    <h2>6. Your Choices and Consent</h2>
+    <p>
+      You can stop blink counting, disable auto-start and local alerts, or revoke camera and overlay access.
+      These controls do not disable Google Analytics, Crashlytics, Performance Monitoring, or ML Kit's
+      technical metrics. This version does not provide a separate in-app consent prompt or switch for
+      analytics or diagnostics.
+    </p>
+    <p>
+      Android may let you reset or delete the Advertising ID or limit advertising-related processing.
+      Available controls depend on your Android version and device. These controls do not stop all SDK
+      collection or remove installation identifiers. Uninstalling Blinkz prevents further collection by
+      that installed copy but does not automatically delete information already sent to Google.
+    </p>
+    <p>
+      Where applicable, privacy law requires a lawful basis for processing and may require consent for
+      particular analytics or identifier uses. This Policy explains data practices; it does not itself
+      request or establish that consent. Contact the Service Provider to exercise applicable privacy rights
+      or ask about the basis for particular processing.
+    </p>
+
+    <h2>7. Android Backup and Device Transfer</h2>
+    <p>
+      Blinkz permits Android system backup and does not specifically exclude its statistics database or
+      settings. Depending on your device, Android version, backup provider, and account settings, those
+      files may be copied to a cloud backup or transferred to another device. This can include blink counts
+      with dates and times. It is separate from Firebase analytics and diagnostics and is controlled by
+      Android's backup and transfer mechanisms. The Service Provider does not operate or receive those
+      backups. Manage them through your device and backup-provider settings. See
+      <a href="https://developer.android.com/identity/data/autobackup" target="_blank" rel="noopener noreferrer">Android Auto Backup information</a>.
+    </p>
+
+    <h2>8. Retention and Deletion</h2>
+    <p>
+      Camera frames and facial-analysis results are temporary processing data rather than a saved history.
+      Local blink records have no automatic expiry in this version. They remain until app storage is
+      cleared, the Application is uninstalled, or the data is otherwise removed. There is no in-app control
+      for deleting individual history records. You can clear all local data using Android's app storage
+      settings. Backup copies may remain or restore data later; manage or delete them separately with your
+      backup provider.
+    </p>
+    <p>
+      Under Google's published Firebase policy, Crashlytics keeps crash traces and associated identifiers
+      for 90 days before beginning removal from live and backup systems. Performance Monitoring keeps
+      IP-associated events for 30 days and installation-associated and de-identified performance data for
+      60 days before beginning removal. Analytics retention depends on the Analytics property's settings
+      and Google's applicable policies; aggregated reports may have different retention. ML Kit metrics
+      follow Google's applicable policies. Clearing local data does not by itself delete data already
+      processed by these services.
+    </p>
+    <p>
+      To request deletion of information held by the Service Provider, use the contact address below.
+      Support correspondence is kept as needed to handle the request and meet applicable obligations.
+      Requests concerning provider-controlled data or system backups may also require contacting Google
+      or your backup provider.
+    </p>
+
+    <h2>9. International Processing and Security</h2>
+    <p>
+      Google and your backup provider may process information outside your country, subject to their terms
+      and applicable transfer safeguards. Local app files use Android's application storage protections.
+      Google documents encrypted transport for Firebase and ML Kit technical data. No electronic storage
+      or transmission method can guarantee absolute security. Protect access to your device and any account
+      used for system backups.
+    </p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>
+      Blinkz does not ask for a date of birth or verify age. The automatic SDK processing described in this
+      Policy is not disabled by an age check. Parents and guardians can manage installation and permissions
+      through device controls. If you believe a child's information has been processed inappropriately,
+      contact the Service Provider so the matter and any applicable deletion request can be investigated.
+    </p>
+
+    <h2>11. Your Privacy Rights</h2>
+    <p>
+      Depending on your jurisdiction and the processing involved, you may have rights to information,
+      access, correction, deletion, portability, restriction, objection, withdrawal of consent where consent
+      is the basis, and a complaint to a data protection authority. Contact the Service Provider to submit
+      a request. Because Blinkz has no account and does not upload its local blink-history database to the
+      Service Provider, the Service Provider cannot remotely retrieve or erase that database and may be
+      unable to associate SDK records with you without additional information.
+    </p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>
+      This Policy may be updated when the Application, included services, or data practices change. An
+      updated version will show a revised effective date. Additional notice will be provided where required
+      by applicable law.
+    </p>
+
+    <h2>13. Contact Us</h2>
+    <p>
+      For questions or privacy requests related to Blinkz, contact Sergey V. at
+      <a href="mailto:info@sedsoftware.com">info@sedsoftware.com</a>.
+    </p>
+  </main>
+  <footer>Blinkz — Privacy Policy</footer>
+</body>
+</html>

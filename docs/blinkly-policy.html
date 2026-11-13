@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Blinkly - Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#fff; --text:#202124; --muted:#5f6368; --link:#1769aa; --border:#dadce0; --panel:#f8f9fa; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121212; --text:#e8eaed; --muted:#bdc1c6; --link:#8ab4f8; --border:#3c4043; --panel:#1f1f1f; } }
+    body { max-width:860px; margin:0 auto; padding:32px 20px 56px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.65; color:var(--text); background:var(--bg); }
+    h1 { font-size:2rem; line-height:1.25; margin:0 0 8px; }
+    h2 { font-size:1.3rem; margin:32px 0 8px; }
+    p, li { font-size:1rem; }
+    ul { padding-left:1.4rem; }
+    a { color:var(--link); }
+    .effective-date { color:var(--muted); margin-top:0; }
+    .summary { margin:24px 0; padding:16px 18px; border:1px solid var(--border); border-radius:12px; background:var(--panel); }
+    footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Blinkly Privacy Policy</h1>
+    <p class="effective-date"><strong>Last updated:</strong> November 13, 2026</p>
+
+    <p>
+      This Privacy Policy describes how the Blinkly mobile application for Android and iOS (the
+      “Application”), operated by Sergey V. (the “Service Provider”), processes and shares information.
+      Blinkly provides eye-exercise routines, 20-20-20 break reminders, progress tracking, achievements,
+      and a virtual garden. It is a wellness application, not a medical device, diagnostic service,
+      treatment, or method of vision correction.
+    </p>
+
+    <div class="summary">
+      <strong>Privacy summary:</strong> Blinkly keeps exercise history, reminders, progress, and preferences
+      on your device. A Google account is optional: signing in starts synchronization of your exercise
+      history, achievements, reminder schedules, and app preferences with Google Cloud Firestore.
+      Firebase Analytics is enabled by default in release versions and can be turned off in Settings.
+      Firebase Crashlytics reports crashes and technical errors independently of that switch.
+      Yandex Mobile Ads provides contextual inline banners on the Achievements and Garden screens.
+      Blinkly does not send your detailed exercise history, reminder schedules, or account information
+      to advertising or analytics services.
+    </div>
+
+    <h2>1. Information Stored on Your Device</h2>
+    <p>Blinkly stores the following information to provide its features:</p>
+    <ul>
+      <li>completed exercise types and blocks, with completion timestamps;</li>
+      <li>achievement unlocks and the information used to calculate your calendar, streaks, and garden progress;</li>
+      <li>reminder types, dates, times, repeat intervals, selected weekdays, and scheduling identifiers;</li>
+      <li>exercise repetition and duration preferences, theme selection, onboarding state, and displayed tips;</li>
+      <li>synchronization timestamps and a device-local usage-analytics preference.</li>
+    </ul>
+    <p>
+      Core exercise, progress, and local reminder features do not require a Google account. Not signing in
+      prevents account-based cloud synchronization; it does not disable the separate analytics, crash-reporting,
+      or advertising services described below.
+    </p>
+
+    <h2>2. Optional Google Sign-In and Cloud Synchronization</h2>
+    <p>
+      If you choose Google Sign-In in Settings, Google Sign-In and Firebase Authentication process your
+      authentication information. Blinkly receives your Firebase account identifier and, when available,
+      your display name and email address. Google also processes technical connection information,
+      including IP addresses, for authentication and abuse prevention. Blinkly does not receive your
+      Google password. Authentication credentials and session persistence are managed by the native
+      Google and Firebase SDKs rather than stored in Blinkly's exercise database or app preferences.
+    </p>
+    <p>
+      Successful sign-in immediately starts synchronization. You can subsequently use “Sync now” in
+      Settings. The cloud copy is associated with your Firebase account identifier and contains:
+    </p>
+    <ul>
+      <li>exercise types, blocks, and exact completion timestamps;</li>
+      <li>achievement types, levels, and unlock timestamps;</li>
+      <li>reminder schedules and their individual alarms, including dates, times, weekdays, repeat settings, and identifiers;</li>
+      <li>exercise preferences, theme and related progress markers, garden-check and tip-display state, and onboarding state;</li>
+      <li>timestamps and version information needed to synchronize and resolve changes.</li>
+    </ul>
+    <p>
+      Cloud Firestore stores this information on the Service Provider's behalf so you can restore and
+      synchronize data across devices. Your email address and display name are not included in the
+      exercise-and-settings snapshot. The usage-analytics switch is device-local and is not synchronized.
+      Synced exercise and reminder information may reveal your wellness routines. Blinkly does not
+      provide end-to-end encryption of the cloud copy.
+    </p>
+
+    <h2>3. Information Not Requested and Device Permissions</h2>
+    <p>
+      Blinkly does not ask for your date of birth, phone number, contacts, photos, payment information,
+      medical records, diagnoses, or symptoms. It does not use the camera or microphone to track your eyes,
+      and it does not read Apple Health or Health Connect records. Location tracking is disabled in the
+      advertising configuration; the Application does not request device-location permission. Network
+      providers may still infer a general region from an IP address.
+    </p>
+    <p>
+      If you configure reminders, Blinkly requests notification permission where required. On Android 12
+      and newer, it also requests the separate exact-alarm access needed for precise reminder scheduling.
+      Reminders are scheduled locally through the operating system, and Android may restore scheduled
+      reminders after a reboot or app update. Notification content may appear on your lock screen according
+      to your device settings. You can manage these permissions in system settings; denying them limits
+      reminder delivery but does not prevent use of the exercise and progress features.
+    </p>
+
+    <h2>4. Advertising, Analytics, and Crash Diagnostics</h2>
+
+    <h3>Yandex Mobile Ads SDK</h3>
+    <p>
+      Blinkly displays contextual adaptive inline banners on the Achievements and Garden screens on
+      Android and iOS. The Application sends an ad-unit identifier with each ad request, without exercise,
+      reminder, achievement, garden, account, or synchronization data. It configures the SDK with user
+      consent set to false and location tracking disabled. The current version has no in-app advertising
+      consent dialog or advertising opt-out switch.
+    </p>
+    <p>
+      The SDK may independently process IP addresses, device and application information, SDK-generated
+      identifiers, and ad impressions, interactions, and diagnostic information to deliver and measure ads,
+      prevent fraud, and operate its services. Android excludes the Advertising ID permission, and iOS
+      does not request App Tracking Transparency authorization or access to IDFA. These restrictions do
+      not mean that all SDK identifiers or network processing are disabled. AppMetrica components are
+      included as dependencies of Yandex Mobile Ads; Blinkly does not activate AppMetrica as a separate
+      product-analytics service or send Blinkly product events to it.
+    </p>
+
+    <h3>Google Analytics for Firebase</h3>
+    <p>
+      Usage analytics is <strong>enabled by default in release versions</strong>. You can turn it off or
+      on in Settings under Privacy using the “Anonymous analytics” switch. Although this is the switch's
+      name, SDK data is not necessarily anonymous: Google Analytics uses an app-instance identifier and
+      processes device and application information and automatically collected events. It may derive
+      coarse geographic information from network data.
+    </p>
+    <p>Blinkly's own analytics events cover only these coarse actions and categories:</p>
+    <ul>
+      <li>starting and completing onboarding;</li>
+      <li>opening an app tab or Settings;</li>
+      <li>starting a training session and whether it was completed or cancelled;</li>
+      <li>opening reminder setup and creating a daily, weekly, or workday-period reminder;</li>
+      <li>opening Achievements or Garden;</li>
+      <li>whether a synchronization action succeeded, failed, or was cancelled.</li>
+    </ul>
+    <p>
+      These events do not include individual exercise details, stored completion timestamps, reminder
+      dates or times, account identifiers, email addresses, achievement unlocks, garden state, free text,
+      or exception details. Blinkly does not set Analytics User-ID or custom user properties. Advertising
+      ID collection, iOS Analytics IDFV collection, and advertising-personalization signals are disabled.
+      Debug builds disable Analytics collection.
+    </p>
+    <p>
+      Turning the switch off disables further Analytics collection. It does not reset the app-instance
+      identifier, erase previously collected server data, or disable Firebase Authentication, Cloud
+      Firestore synchronization, Crashlytics, or Yandex Mobile Ads. The setting applies separately on
+      each device.
+    </p>
+
+    <h3>Firebase Crashlytics</h3>
+    <p>
+      Blinkly uses Firebase Crashlytics for crashes and caught technical errors. Reports may include
+      stack traces, exception types and messages, crash timestamps, device and app information, and
+      SDK-generated installation and session identifiers. Blinkly does not attach exercise history,
+      reminder schedules, account details, achievement or garden data, custom user identifiers, or
+      content logs and custom content keys. Exception messages can contain runtime diagnostic details.
+      When Analytics is enabled, its events may also be included as crash-report breadcrumbs.
+    </p>
+    <p>
+      Crash reporting operates independently of the Analytics switch. Reports can be held locally for
+      later upload when a network connection becomes available.
+    </p>
+
+    <p>More information about the providers' processing is available here:</p>
+    <ul>
+      <li><a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">Yandex Privacy Policy</a></li>
+      <li><a href="https://yandex.com/legal/international_ads_privacy_policy/en/" target="_blank" rel="noopener noreferrer">Yandex Ads Privacy Policy</a></li>
+      <li><a href="https://yandex.com/legal/mobileads_sdk_agreement/" target="_blank" rel="noopener noreferrer">Yandex Mobile Ads SDK License Agreement</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/analytics/answer/7667196" target="_blank" rel="noopener noreferrer">Google Analytics Data Retention</a></li>
+    </ul>
+
+    <h2>5. Purposes of Processing</h2>
+    <ul>
+      <li>providing exercises, progress calculations, achievements, the virtual garden, and local reminders;</li>
+      <li>authenticating you and synchronizing your data when you choose Google Sign-In;</li>
+      <li>understanding coarse product usage while Analytics is enabled;</li>
+      <li>displaying, measuring, and securing contextual advertisements;</li>
+      <li>diagnosing technical failures and maintaining the Application's reliability and security;</li>
+      <li>responding to support and privacy requests and meeting legal obligations.</li>
+    </ul>
+
+    <h2>6. Legal Bases and Your Choices</h2>
+    <p>
+      Where applicable law requires a legal basis, the basis depends on the purpose: providing the
+      functionality and optional synchronization you request; legitimate interests in reliability,
+      security, and supporting the Application through contextual advertising where permitted by law;
+      compliance with legal obligations; or consent where required and validly obtained. This Policy
+      does not itself constitute consent. An opt-out switch does not replace prior consent where the
+      law requires it.
+    </p>
+    <p>
+      You can use the core features without signing in, disable Analytics, and change notification
+      permissions. The current version does not provide an in-app account-deletion control or a
+      separate switch for crash reporting or advertising. To exercise additional privacy rights,
+      contact the Service Provider using the address below.
+    </p>
+
+    <h2>7. Data Sharing</h2>
+    <p>
+      The Service Provider does not sell your exercise history, reminder schedules, or account
+      information. Information is processed by Google for the Firebase and Google Sign-In services
+      and by Yandex for advertising as described above. Cloud synchronization data is not supplied
+      by Blinkly for ad targeting or product analytics. These providers may use subprocessors and
+      partners under their applicable terms and policies. Information may also be disclosed when
+      required by law or necessary to address fraud, security threats, or legal claims.
+    </p>
+    <p>
+      If you contact the Service Provider, your contact details and message are processed to respond
+      to your request. Please do not include passwords, authentication tokens, or medical records.
+    </p>
+
+    <h2>8. Retention and Deletion</h2>
+    <p>
+      Local records remain until removed through supported app functions, device-storage controls,
+      or uninstallation, subject to operating-system backup and restore behavior. Uninstalling the
+      Application or clearing its local data does not delete a Firestore cloud copy or Firebase
+      Authentication account. Synchronizing again may restore cloud records.
+    </p>
+    <p>
+      Cloud snapshots are retained to support future synchronization until replaced through sync or
+      deleted following a verified request; the current version does not implement automatic expiry
+      of inactive cloud snapshots. To request deletion of your Blinkly Firebase account and associated
+      Firestore data, email the contact address below from the Google account email used for sign-in,
+      where possible, and specify the request. Reasonable verification may be needed. Avoid signing
+      in or synchronizing again while deletion is being handled to prevent data from being uploaded
+      again. Deletion of Blinkly data does not delete your Google account.
+    </p>
+    <p>
+      According to Google's published policy, Crashlytics retains crash traces and associated identifiers
+      for 90 days before starting removal from live and backup systems. Firebase Authentication retains
+      account information until deletion is initiated, with removal from live and backup systems within
+      180 days after that; logged authentication IP addresses are kept for a few weeks.
+    </p>
+    <p>
+      Analytics retention depends on the Service Provider's Google Analytics property settings and
+      Google's policies; standard aggregated reports may be retained separately from user-level and
+      event-level data. Yandex retention follows its applicable policies and legal obligations.
+      Disabling Analytics does not itself delete server data. Privacy requests can be sent to the
+      Service Provider; requests concerning information independently controlled by Google or
+      Yandex may also require contacting the relevant provider.
+    </p>
+
+    <h2>9. International Transfers</h2>
+    <p>
+      Google, Yandex, and their service providers may process information outside your country.
+      Applicable transfer safeguards depend on the service, destination, and law, and are described
+      in the relevant providers' privacy and data-processing terms.
+    </p>
+
+    <h2>10. Security</h2>
+    <p>
+      Blinkly uses local app storage and the authentication and encrypted network connections supplied
+      by its platform and service integrations. Cloud data is associated with your authenticated account.
+      Cloud synchronization is not end-to-end encrypted by Blinkly. No storage or transmission method
+      can guarantee absolute security; protect access to your device and Google account.
+    </p>
+
+    <h2>11. General Audience and Children's Privacy</h2>
+    <p>
+      Blinkly is a general-audience wellness application and is not restricted to adults aged 18 or
+      older. It does not ask for a date of birth, determine a user's age, or provide a verified
+      parental-consent flow. The advertising configuration does not currently distinguish child
+      users from other users. The data processing described in this Policy may therefore occur
+      without Blinkly knowing a user's age.
+    </p>
+    <p>
+      Google account use is also subject to Google's applicable age and parental-supervision rules.
+      Parents or guardians with concerns about a child's information can contact the Service Provider
+      to request review or deletion, subject to appropriate verification. Where applicable law requires
+      parental authorization for processing children's data, publication of this Policy does not
+      replace that authorization.
+    </p>
+
+    <h2>12. Your Privacy Rights</h2>
+    <p>
+      Depending on where you live, you may have rights to access, correct, receive a copy of, or
+      delete personal data; restrict or object to processing; withdraw consent where processing
+      relies on it; and complain to a data protection authority. Contact the Service Provider to
+      make a request. Withdrawal does not affect the lawfulness of processing before withdrawal.
+      SDK-generated data may not be directly identifiable from your email address, so additional
+      information or provider-specific procedures may be needed to locate it. Never send your password
+      or authentication tokens for verification.
+    </p>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>
+      This Policy may be updated when the Application, integrations, or data practices change. The
+      revised version will carry an updated date, and material changes will be communicated where
+      required by applicable law.
+    </p>
+
+    <h2>14. Contact Us</h2>
+    <p>
+      For questions or privacy requests related to Blinkly, contact Sergey V. at
+      <a href="mailto:info@sedsoftware.com">info@sedsoftware.com</a>.
+    </p>
+  </main>
+  <footer>Blinkly — Privacy Policy</footer>
+</body>
+</html>
